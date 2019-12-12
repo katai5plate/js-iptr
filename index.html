@@ -1,0 +1,9 @@
+<textarea id="code" rows="4" cols="40"></textarea>
+<button id="run">run</button>
+<p id="result"></p>
+<script>
+  const code = document.getElementById("code").value
+  document.getElementById("run").onclick = () => {
+    document.getElementById("result").innerText = eval(code)
+  }
+</script>
